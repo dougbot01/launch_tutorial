@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find launch_tutorial)/include_r6.launch" ns="group1" />
+  <include file="$(find launch_tutorial)/include_r6.launch" ns="group2" />
+  <node pkg="rxtools" type="rxplot" name="rxplot" args="/group1/turtle1/pose/theta /group2/turtle1/pose/theta" />
+</launch>
+

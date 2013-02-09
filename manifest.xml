@@ -1,0 +1,18 @@
+<package>
+  <description brief="launch_tutorial">
+
+     launch_tutorial
+
+  </description>
+  <author>doug</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/launch_tutorial</url>
+  <depend package="turtlesim"/>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+
+</package>
+
+

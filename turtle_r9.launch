@@ -1,0 +1,16 @@
+<launch>
+  <include file="$(find launch_tutorial)/include_r7.launch" ns="group1">
+    <arg name="primary" value="true" />
+  </include>
+  <include file="$(find launch_tutorial)/include_r7.launch" ns="group2">
+    <arg name="primary" value="false" />
+  </include>
+  <node pkg="rxtools" type="rxplot" name="rxplot" args="/group1/turtle1/pose/theta /group2/turtle1/pose/theta" />
+  <node pkg="launch_tutorial" type="mimic_param" name="mimic"
+output="screen">
+    <remap from="input" to="/group1/turtle1" />
+    <remap from="output" to="/group2/turtle1" />
+    <param name="speed_scale" value="2.0" />
+  </node>
+</launch>
+

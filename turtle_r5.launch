@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find launch_tutorial)/turtle_r3.launch" ns="group1" />
+  <include file="$(find launch_tutorial)/turtle_r3.launch" ns="group2" />
+</launch>
+
